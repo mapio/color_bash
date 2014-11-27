@@ -20,6 +20,6 @@ read dollar
 echo -e ${colors[white]}"What color you want ${colors[white_bold]}commands"${colors[white]}?
 read com
 
-sed -i '/export\(.*\)##Line added by ColorBash/d' ~/.bashrc
+sed -i~ '/export\(.*\)##Line added by ColorBash/d' ~/.bashrc
 echo export PS1=\"${colors[$user]}"\u"${colors[$et]}"@"${colors[$host]}"\h "${colors[$dir]}"\W"${colors[$dollar]}" $ "${colors[$com]}\" "##Line added by ColorBash">> ~/.bashrc
 exec bash
